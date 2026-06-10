@@ -1,0 +1,40 @@
+## .NET / C#
+
+# Build outputs
+bin/
+obj/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coveragexml
+
+# Publish output
+publish/
+out/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
