@@ -148,9 +148,9 @@
 
 ---
 
-## Automated Test Cases (Selenium — Placeholder)
+## Automated Test Cases (NUnit — Placeholder)
 
-> Automated tests will mirror the manual test cases above, translating each Given/When/Then into Selenium assertions. This section will be populated as the tool is built.
+> Automated tests will mirror the manual test cases above, translating each Given/When/Then into NUnit assertions. This section will be populated as the tool is built.
 
 | TC ID | Title | Status |
 |---|---|---|
