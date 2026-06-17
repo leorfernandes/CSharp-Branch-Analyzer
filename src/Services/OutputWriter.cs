@@ -36,7 +36,6 @@ public class OutputWriter
     {
         var fullPath = CheckOutputFormatExistance(report, outputPath);
         CheckOutputPathExistance(Path.GetDirectoryName(fullPath));
-
         File.WriteAllText(fullPath, content);
     }
 
@@ -56,8 +55,9 @@ public class OutputWriter
         };
     }
 
-    public static void CheckOutputPathExistance(string outputPath)
+    public static void CheckOutputPathExistance(string? outputPath)
     {
+        if (outputPath == null) return;
         if (!Directory.Exists(outputPath))
         {
             Directory.CreateDirectory(outputPath);

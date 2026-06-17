@@ -1,6 +1,6 @@
 public static class FileParser
 {
-    public static string ParseFile(string filePath)
+    public static string? ParseFile(string filePath)
     {
         try
         {

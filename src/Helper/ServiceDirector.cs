@@ -1,7 +1,7 @@
 public static class ServiceDirector
 {
 
-    public static string[] CheckArguments(string[] args)
+    public static string[]? CheckArguments(string[] args)
     {
         switch (args[0].ToLower())
         {
@@ -11,7 +11,7 @@ public static class ServiceDirector
             case "analyze":
                 if (args.Length == 2)
                 {
-                    var parsedArgs = new string[3] { args[1], "console", null };
+                    var parsedArgs = new string[3] { args[1], "console", string.Empty };
                     return parsedArgs;
                 }
                 else if (args.Length == 3)

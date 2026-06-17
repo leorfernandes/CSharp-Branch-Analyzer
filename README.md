@@ -26,11 +26,9 @@ dotnet run -- help
 ```
 
 ## Example Screenshot
-'''
+![Terminal screenshot](./media/screenshot.png)
 
 ## Testing
-Automated tests are written using NUnit, covering core analysis commands and JSON output validation.
-
 See [docs/test-cases.md](./docs/test-cases.md) for the full test case suite.
 
 ## Limitations / Out of scope

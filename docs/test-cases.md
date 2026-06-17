@@ -32,7 +32,7 @@
 **Linked requirement:** FR-02
 
 **Given** a valid, well-formed `.cs` file exists  
-**When** the user runs `dotnet run -- analyze input.cs`  
+**When** the user runs `dotnet run -- analyze input.cs ./output/`  
 **Then** the tool parses the file successfully and produces a JSON report
 
 **Expected Result:** JSON report contains at least one entry from the file  
@@ -145,27 +145,6 @@
 
 **Expected Result:** Error message indicates the file type is not supported  
 **Status:** Not Run
-
----
-
-## Automated Test Cases (NUnit — Placeholder)
-
-> Automated tests will mirror the manual test cases above, translating each Given/When/Then into NUnit assertions. This section will be populated as the tool is built.
-
-| TC ID | Title | Status |
-|---|---|---|
-| TC-01 | Valid file path accepted | Pending |
-| TC-02 | Missing file path argument | Pending |
-| TC-03 | Parse valid C# file | Pending |
-| TC-04 | Parse malformed C# file | Pending |
-| TC-05 | Detect if/else branches | Pending |
-| TC-06 | Detect switch branches | Pending |
-| TC-07 | Detect ternary branches | Pending |
-| TC-08 | Print JSON report to terminal | Pending |
-| TC-09 | Export JSON report to file | Pending |
-| TC-10 | Display help message | Pending |
-| TC-11 | Non-existent file path | Pending |
-| TC-12 | Non C# file provided | Pending |
 
 ---
 ## Other Files

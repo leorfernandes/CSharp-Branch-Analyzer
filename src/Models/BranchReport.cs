@@ -1,5 +1,5 @@
 public class BranchReport
 {
-    public string File { get; set; }
-    public List<BranchEntry> Branches { get; set; }
+    public required string File { get; set; }
+    public required List<BranchEntry> Branches { get; set; }
 }

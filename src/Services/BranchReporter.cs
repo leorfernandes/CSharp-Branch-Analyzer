@@ -4,7 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 public static class BranchReporter
 {
-    public static BranchReport BranchReport(string fileContent)
+    public static BranchReport? BranchReport(string fileContent)
     {
         try {
             var branchReport = new BranchReport

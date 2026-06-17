@@ -5,13 +5,18 @@
         try
         {
             var input = ServiceDirector.CheckArguments(args);
-            Console.WriteLine($"Arguments received: {string.Join(", ", input)}");
             if (input == null)
             {
                 return; // Exit if arguments are invalid or help was displayed
             }
+            Console.WriteLine($"Arguments received: {string.Join(", ", input)}");
 
             var fileContent = FileParser.ParseFile(input[0]);
+            if (fileContent == null)
+            {
+                Console.WriteLine("Error: Could not read file content.");
+                return;
+            }
             var branchReport = BranchReporter.BranchReport(fileContent);
             if (NullChecker.IsBranchReportNullOrEmpty(branchReport))
             {
